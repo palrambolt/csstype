@@ -1,0 +1,547 @@
+body {
+    background-color: rgb(197, 244, 163);
+    
+}
+
+div{
+    height:200px;
+    width: 200px;
+    
+
+}
+#box2{
+    background-color: rgb(255, 196, 196);
+}
+#box3{
+    background-color: rgb(29, 197, 63);
+}
+#box4{
+    background-color: rgb(240, 114, 11);
+}
+#box5{
+    background-color: rgb(255, 196, 196);
+}
+
+#letter-l {
+    height: 400px;
+    width: 400px;
+    background-color: blueviolet;
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px; 
+}
+
+#child {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#letter-a {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    margin-top:100px:
+}
+
+#a-left {
+    position: absolute;
+    height: 400px;
+    width: 20px;
+    background-color: black;
+    left: -12px;
+    top: ;
+    transform: rotate(30deg); 
+    transform-origin: bottom left;
+}
+
+#a-right {
+    position: absolute;
+    height: 400px;
+    width: 20px;
+    background-color: black;
+    right: -15px;
+    top: 0;
+    transform: rotate(-30deg); 
+    transform-origin: bottom right;
+}
+
+#a-cross {
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    background-color: black;
+    top: 200px; 
+    left: 100px; 
+}
+
+#letter-b {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+    background-color: blueviolet; 
+    margin-top: 50px; 
+}
+
+#b-vertical {
+    position: absolute;
+    height: 400px; 
+    width: 70px; 
+    background-color: black;
+    left: 0;
+    top: 0;
+}
+
+#b-top {
+    position: absolute;
+    width: 200px; 
+    height: 150px; 
+    background-color: black;
+    border-radius: 90px 90px 0 0; 
+    top: 25px;
+    right: 200px;
+    rotate:90deg;
+}
+
+#b-top-inner{
+    position: absolute;
+    width: 75px; 
+    height: 75px; 
+    background-color: blueviolet;
+    border-radius: 90px 90px 0 0; 
+    top: 50px;
+    right: 75px;
+    rotate: 0deg;
+}
+
+#b-bottom {
+    position: absolute;
+    width: 200px; 
+    height: 150px; 
+    background-color: black;
+    border-radius: 0 0 90px 90px; 
+    bottom: 25px;
+    right: 200px;
+    rotate: -90deg;
+}
+
+#b-bottom-inner{
+    position: absolute;
+    width: 75px; 
+    height: 75px; 
+    background-color: blueviolet;
+    border-radius: 90px 90px 0 0; 
+    top: 25px;
+    right: 60px;
+    rotate: 180deg;
+}
+
+#number-8 {
+    position: relative;
+    width: 400px; 
+    height: 400px; /
+    background-color: blueviolet; 
+    margin-top: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#top-circle, #bottom-circle {
+    position: relative;
+    width: 200px; 
+    height: 200px; 
+    background-color: black;
+    border-radius: 50%; /* Makes it a circle */
+
+}
+
+#top-inner, #bottom-inner {
+    position: absolute;
+    width: 100px; 
+    height: 100px; 
+    background-color: blueviolet; 
+    border-radius: 50%; /* Makes it a circle */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+
+#number-8-squish {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet; 
+    margin-top: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+#top-circle, #bottom-circle {
+    position: relative;
+    width: 100px; 
+    height: 200px; 
+    background-color: black;
+    border-radius: 50%; 
+
+}
+
+#top-inner, #bottom-inner {
+    position: absolute;
+    width: 50px; 
+    height: 100px; 
+    background-color: blueviolet; 
+    border-radius: 50%; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#letter-e {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+    background-color: blueviolet; 
+}
+
+#e-vertical {
+    position: absolute;
+    width: 50px; 
+    height: 75%; 
+    background-color: black;
+    left: 0; 
+}
+
+#e-top {
+    position: absolute;
+    width: 150px; 
+    height: 50px; 
+    background-color: black;
+    top: 0; 
+    left: 50px; 
+    border-top-right-radius: 100px; 
+    border-bottom-right-radius: 100px; 
+}
+
+#e-middle {
+    position: absolute;
+    width: 150px; 
+    height: 50px; 
+    background-color: black;
+    top: 125px; 
+    left: 50px; 
+    border-top-right-radius: 100px; 
+    border-bottom-right-radius: 100px; 
+}
+
+#e-bottom {
+    position: absolute;
+    width: 150px; 
+    height: 50px; 
+    background-color: black;
+    bottom: 100px; 
+    left: 50px; 
+    border-top-right-radius: 100px; 
+    border-bottom-right-radius: 100px; 
+}
+
+#letter-f {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+    background-color: blueviolet; 
+}
+
+#f-vertical {
+    position: absolute;
+    width: 50px; 
+    height: 75%; 
+    background-color: black;
+    left: 100px; 
+    rotate: -45deg;
+}
+
+#f-top {
+    position: absolute;
+    width: 150px; 
+    height: 50px; 
+    background-color: black;
+    top: -30px; 
+    left: 30px; 
+    border-top-right-radius: 100px; 
+    border-bottom-right-radius: 100px; 
+    rotate: -45deg;
+}
+
+#f-middle {
+    position: absolute;
+    width: 150px; 
+    height: 50px; 
+    background-color: black;
+    top: 50px; 
+    left: 100px; 
+    border-top-right-radius: 100px; 
+    border-bottom-right-radius: 100px;
+    rotate: -45deg;
+}
+
+#letter-i {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+    background-color: blueviolet;
+}
+
+#i-vertical {
+    position: absolute;
+    width: 50px; 
+    height: 75%; 
+    background-color: black;
+    left: 175px; 
+    bottom: 0; 
+}
+
+#i-dot {
+    position: absolute;
+    width: 80px; 
+    height: 80px; 
+    background-color: black;
+    border-radius: 50%; /* Makes it a circle */
+    left: 160px; 
+    top: 0px; 
+}
+
+#letter-h {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+}
+
+#h-left {
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    left: 125px;
+    top:45px;
+}
+
+#h-right {
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    right: 125px;
+    top:45px;
+}
+
+#h-middle {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    top: 110px;
+    left: 175px;
+}
+
+#letter-j {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+}
+
+#j-vertical {
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    left: 175px;
+    top: 50px;
+}
+
+#j-bottom {
+    position: absolute;
+    width: 150px; 
+    height: 100px;
+    background-color: black;
+    border-radius: 0 0 90px 90px; /* Creates the bottom semi-circle */
+    bottom: 125px;
+    right: 175px;
+    rotate: 0deg;
+}
+
+#j-bottom-inner{
+    position: absolute;
+    width: 75px; 
+    height: 195px; 
+    background-color: blueviolet;
+    border-radius: 90px 90px 0 0; /* Creates the top semi-circle */
+    bottom: 155px;
+    right: 212.5px;
+    rotate: 180deg;
+}
+
+#letter-k {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+    background-color: blueviolet; 
+}
+
+#k-vertical {
+    position: absolute;
+    width: 50px; 
+    height: 75%; 
+    background-color: black;
+    left: 100px; 
+    rotate: 0deg;
+}
+
+#k-top {
+    position: absolute;
+    width:200px;
+    height: 50px;
+    background-color: black;
+    top:50px; 
+    left: 100px; 
+    border-top-right-radius: 100px; /* Curved edge */
+    border-bottom-right-radius: 100px; /* Curved edge */
+    rotate: -45deg;
+}
+
+#k-middle {
+    position: absolute;
+    width:200px;
+    height: 50px; 
+    background-color: black;
+    top: 200px; 
+    left: 100px; 
+    border-top-right-radius: 100px; 
+    border-bottom-right-radius: 100px; 
+    rotate: 45deg;
+}
+
+#letter-m {
+    position: relative;
+    width: 400px;
+    height: 400px; 
+    background-color: blueviolet;
+}
+
+#m-left {
+    position: absolute;
+    width: 50px; 
+    height: 75%; 
+    background-color: black;
+    left: 50px; 
+    border-top-right-radius: 25px; 
+    border-top-left-radius: 25px; 
+}
+
+#m-right {
+    position: absolute;
+    width: 50px; 
+    height: 75%; 
+    background-color: black;
+    right: 50px; 
+    border-top-right-radius: 25px; 
+    border-top-left-radius: 25px; 
+}
+
+#m-diagonal-left {
+    position: absolute;
+    width: 195px; 
+    height: 50px; 
+    background-color: black;
+    top: 75px; 
+    left: 50px; 
+    transform: rotate(45deg); /* Rotate to form the diagonal */
+    border-bottom-right-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+
+}
+
+#m-diagonal-right {
+    position: absolute;
+    width: 195px; 
+    height: 50px; 
+    background-color: black;
+    top: 75px; 
+    right: 50px;
+    transform: rotate(-45deg); 
+    border-bottom-right-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+}
+
+#number-3 {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+    background-color: blueviolet;
+}
+
+#top-line {
+    position: absolute;
+    width: 50px; 
+    height: 75%; 
+    background-color: black;
+    left: 175px; 
+    top: -125px;
+    border-top-right-radius: 25px; 
+    border-top-left-radius: 25px; 
+    border-bottom-right-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+    rotate: 90deg;
+}
+
+#bottom-line {
+    position: absolute;
+    width: 50px; 
+    height: 75%; 
+    background-color: black;
+    left: 175px; 
+    top: 125px;
+    border-top-right-radius: 25px; 
+    border-top-left-radius: 25px; 
+    border-bottom-right-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+    rotate: 90deg;
+}
+
+
+#top-diagonal {
+    position: absolute;
+    width: 195px; 
+    height: 50px; 
+    background-color: black;
+    top:175px; 
+    left: 150px; 
+    transform: rotate(45deg); 
+    border-bottom-right-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+
+}
+
+
+#bottom-diagonal {
+    position: absolute;
+    width: 195px; 
+    height: 50px; 
+    background-color: black;
+    top: 65px; 
+    right: 45px; 
+    border-bottom-right-radius: 25px; 
+    border-bottom-left-radius: 25px;
+    rotate:135deg;
+    
+}
