@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #96e5f8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "hero"
+        "services"
+        "portfolio"
+        "testimonials"
+        "contact"
+        "footer";
+    grid-gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav {
+    grid-area: nav;
+    background: #444;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 0;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+nav ul li:hover {
+    color: red;
+}
+
+section {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    grid-area: hero;
+    background: #ddd;
+    padding: 20px;
+}
+.hero::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.";
+    display: block;
+    margin-top: 10px;
+}
+
+.services {
+    grid-area: services;
+    background: #ccc;
+    padding: 20px;
+}
+.services::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.";
+    display: block;
+    margin-top: 10px;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    background: #bbb;
+    padding: 20px;
+}
+.portfolio::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate metus vel sapien laoreet, at gravida elit pellentesque.";
+    display: block;
+    margin-top: 10px;
+}
+
+.testimonials {
+    grid-area: testimonials;
+    background: #aaa;
+    padding: 20px;
+}
+.testimonials::after {
+    content: "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\" - Client A";
+    display: block;
+    margin-top: 10px;
+}
+
+.contact {
+    grid-area: contact;
+    background: #999;
+    padding: 20px;
+}
+.contact::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.";
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 10px;
+        display: block;
+    }
+}
